@@ -1,452 +1,1136 @@
-<!DOCTYPE HTML>
-<html lang="">
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
-    <!--Setting-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-    <meta http-equiv="Cache-Control" content="no-transform">
-    <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta name="apple-mobile-web-app-capable" content="xiaoHou">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no,email=no,adress=no">
-    <meta name="browsermode" content="application">
-    <meta name="screen-orientation" content="portrait">
-    <link rel="dns-prefetch" href="http://www.xiaohoutongxue.cn">
-    <!--SEO-->
-
-
-
-
-
-<meta name="robots" content="all" />
-<meta name="google" content="all" />
-<meta name="googlebot" content="all" />
-<meta name="verify" content="all" />
-    <!--Title-->
-
-
-<title>xiaoHou</title>
-
-
-    <link rel="alternate" href="/atom.xml" title="xiaoHou" type="application/atom+xml">
-
-
-    <link rel="icon" href="/icon.ico">
-
-    
-
-
-
-<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css?rev=3.3.4">
-<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/style.css?rev=@@hash">
-
-
-
-
-    
-	<div class="hide">
-		<script type="text/javascript">
-			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-	</div>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
 
 
 
 
 
 
-    
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Android攻城狮">
+<meta property="og:type" content="website">
+<meta property="og:title" content="XiaoHou blog">
+<meta property="og:url" content="http://www.xiaohoutongxue.cn/index.html">
+<meta property="og:site_name" content="XiaoHou blog">
+<meta property="og:description" content="Android攻城狮">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="XiaoHou blog">
+<meta name="twitter:description" content="Android攻城狮">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'xiaoHou'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.xiaohoutongxue.cn/"/>
+
+
+
+
+
+  <title>XiaoHou blog</title>
+  
+
+
+
+
+
+
+
+
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-<!--[if lte IE 8]>
-<style>
-    html{ font-size: 1em }
-</style>
-<![endif]-->
-<!--[if lte IE 9]>
-<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
-<![endif]-->
+  
+  
+    
+  
 
-<body>
-    <header class="main-header"  >
-    <div class="main-header-box">
-        <a class="header-avatar" href="/" title='xiaoHou'>
-            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
-        </a>
-        <div class="branding">
-        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
-            
-                <h2> . </h2>
-            
-    	</div>
+  <div class="container sidebar-position-right 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">XiaoHou blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-</header>
-    <nav class="main-navigation">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
-                    <span class="sr-only"></span>
-                        <i class="fa fa-bars"></i>
-                    </span>
-                </div>
-                <div class="collapse navbar-collapse" id="main-menu">
-                    <ul class="menu">
-                        
-                            <li role="presentation" class="text-center"><a href="/"><i class="fa "></i>主页</a>
-                            </li>
-                        
-                            <li role="presentation" class="text-center"><a href="/archives"><i class="fa "></i>归档</a>
-                            </li>
-                        
-                            <li role="presentation" class="text-center"><a href="/"><i class="fa "></i>个人简历</a>
-                            </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+      
+        <p class="site-subtitle">You're welcome</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
 </nav>
-    <section class="content-wrap">
-        <div class="container">
-            <div class="row">
-                <main class="col-md-8 main-content ">
-                    <div class="carousel">
-    <img src="/img/head-img.jpg">
-</div>
 
 
 
+ </div>
+    </header>
 
-<article class="post">
-    
-        <div class="post-media">
-            <a href="/2018/04/09/自定义View/自定义开关/">
-                <img class="img-ajax" src="/img/loading.gif"  data-src="http://p6urtncv1.bkt.clouddn.com/timg.gif"   alt="自定义View初使用-自定义开关"> 
-            </a>
-        </div>
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2018/04/09/自定义View/自定义开关/">自定义View初使用-自定义开关</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2018年04月09日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
             
-                前言
-一直觉得自己在自定义View上边花的功夫很少，平时开发中用的最多的也是组合控件要不就是别人的轮子。俗话说得好嘛不想当将军的士兵不是好士兵那么不想自己造轮子的Android开发者怎么会是一个好的开发者呢？我和很多人一样都没有系统去...
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.xiaohoutongxue.cn/2018/04/09/自定义View/自定义开关/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xiaoHou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XiaoHou blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/09/自定义View/自定义开关/" itemprop="url">自定义View初使用-自定义开关</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-        </p> 
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T15:43:28+08:00">
+                2018-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/View/" itemprop="url" rel="index">
+                    <span itemprop="name">View</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<h5 id="一直觉得自己在自定义View上边花的功夫很少，平时开发中用的最多的也是组合控件要不就是别人的轮子。俗话说得好嘛不想当将军的士兵不是好士兵那么不想自己造轮子的Android开发者怎么会是一个好的开发者呢？我和很多人一样都没有系统去学习过自定义View，本篇博客是我借鉴黑马教程的自定义控件写的不是很难我相信每个人都能看懂。"><a href="#一直觉得自己在自定义View上边花的功夫很少，平时开发中用的最多的也是组合控件要不就是别人的轮子。俗话说得好嘛不想当将军的士兵不是好士兵那么不想自己造轮子的Android开发者怎么会是一个好的开发者呢？我和很多人一样都没有系统去学习过自定义View，本篇博客是我借鉴黑马教程的自定义控件写的不是很难我相信每个人都能看懂。" class="headerlink" title="一直觉得自己在自定义View上边花的功夫很少，平时开发中用的最多的也是组合控件要不就是别人的轮子。俗话说得好嘛不想当将军的士兵不是好士兵那么不想自己造轮子的Android开发者怎么会是一个好的开发者呢？我和很多人一样都没有系统去学习过自定义View，本篇博客是我借鉴黑马教程的自定义控件写的不是很难我相信每个人都能看懂。"></a>一直觉得自己在自定义View上边花的功夫很少，平时开发中用的最多的也是组合控件要不就是别人的轮子。俗话说得好嘛不想当将军的士兵不是好士兵那么不想自己造轮子的Android开发者怎么会是一个好的开发者呢？我和很多人一样都没有系统去学习过自定义View，本篇博客是我借鉴黑马教程的自定义控件写的不是很难我相信每个人都能看懂。</h5></blockquote>
+<p>先上效果图</p>
+<p><img src="http://p6urtncv1.bkt.clouddn.com/img.png" alt=""></p>
+<p>自定义View可以分为三大类</p>
+<ul>
+<li>组合已有控件</li>
+<li>完全自定义View</li>
+<li>继承已有的控件实现扩展功能</li>
+</ul>
+<p>这里呢我们重点讲完全自定义View，在讲解之前我们来快速了解一下Android界面绘制流程：</p>
+<p>​    <img src="http://p6urtncv1.bkt.clouddn.com/3.png" alt=""></p>
+<p>Android界面绘制重写对应方法按照上边依次执行切记这些都是在onResume之后执行，Android界面由View和ViewGroup组成：</p>
+<ol>
+<li><p>View（单纯的控件,如：EditText、Button等）绘制流程</p>
+<p> onMeasure() (在这个方法里指定自己的宽高) -&gt; onDraw() (绘制自己的内容)</p>
+</li>
+<li><p>ViewGroup（如：LinearLayout等）绘制流程</p>
+<p> onMeasure() (指定自己的宽高, 所有子View的宽高)-&gt; onLayout() (摆放所有子View) -&gt; onDraw() (绘制内容)</p>
+</li>
+</ol>
+<h2 id="接下来开始定义我们的View："><a href="#接下来开始定义我们的View：" class="headerlink" title="接下来开始定义我们的View："></a>接下来开始定义我们的View：</h2><ol>
+<li><p>写一个继承View类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SwitchView</span> <span class="keyword">extends</span> <span class="title">View</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SwitchView</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SwitchView</span><span class="params">(Context context, @Nullable AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SwitchView</span><span class="params">(Context context, @Nullable AttributeSet attrs, <span class="keyword">int</span> defStyleAttr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs, defStyleAttr);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们在继承时可以看到有四个构造方法：    </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SwitchView(Context context)  用于代码创建控件</span><br><span class="line">SwitchView(Context context, <span class="meta">@Nullable</span> AttributeSet attrs)  用于在xml里使用，可指定自定义属性</span><br><span class="line">SwitchView(Context context, <span class="meta">@Nullable</span> AttributeSet attrs, <span class="keyword">int</span> defStyleAttr)  用于xml里使用，可指定自定义属性、和样式</span><br><span class="line">SwitchView(Context context, <span class="meta">@Nullable</span> AttributeSet attrs, <span class="keyword">int</span> defStyleAttr, <span class="keyword">int</span> defStyleRes)</span><br></pre></td></tr></table></figure>
+<p>这里我们只需要使用三个构造方法即可。</p>
+</li>
+<li><p>拷贝包含包名的全路径到xml中并在界面中找到该控件设置对应信息</p>
+<ul>
+<li><p>找到控件</p>
+<p>这个都很简单直接用findViewById就可以直接找到就不多说了</p>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><p>设置信息</p>
+<p><img src="http://p6urtncv1.bkt.clouddn.com/img.png" alt=""></p>
+<p>上边是我们要实现的效果 可以看出只需要配置三种信息即可：设置背景图片、前景图片和开关状态</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">switchView.setSwitchBackground(R.drawable.switch_background);</span><br><span class="line">switchView.setSwitchSrc(R.drawable.slide_button);</span><br><span class="line">switchView.setSwitchOpen(<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
+<p>我们在继承View的类中创建对应的方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 设置滑块图片</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> switch_background</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSwitchSrc</span><span class="params">(<span class="keyword">int</span> switch_background)</span> </span>&#123;</span><br><span class="line">       imgSrc = BitmapFactory.decodeResource(getResources(), switch_background);</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 设置背景</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> switch_background</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSwitchBackground</span><span class="params">(<span class="keyword">int</span> switch_background)</span> </span>&#123;</span><br><span class="line">       imgBg = BitmapFactory.decodeResource(getResources(),switch_background);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSwitchOpen</span><span class="params">(<span class="keyword">boolean</span> isOpen)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">this</span>.isOpen = isOpen;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>这里我们是通过上边我们自己传入的默认开关状态设置滑块位置，left是当前控件左上角坐标，使用背景宽度-滑块宽度刚好就是左上角坐标位置。大家自己也可以看到我们的UI现在画好了，接下来我们来实现触摸反馈。</p>
+</li>
+</ul>
+<ol start="3">
+<li><p>设置控件的宽度和高度（测量）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">       <span class="comment">//设置宽度和高度</span></span><br><span class="line">       setMeasuredDimension(imgBg.getWidth(),imgBg.getHeight());</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后我们类中重写onDraw方法（绘制）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//绘制背景</span></span><br><span class="line">canvas.drawBitmap(imgBg,<span class="number">0</span>,<span class="number">0</span>,paint);</span><br><span class="line"><span class="comment">//绘制滑块</span></span><br><span class="line"><span class="keyword">if</span> (isOpen) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//滑块滑动位置大小</span></span><br><span class="line">    <span class="keyword">int</span> left = imgBg.getWidth() - imgSrc.getWidth();</span><br><span class="line">    canvas.drawBitmap(imgSrc, left, <span class="number">0</span>, paint);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    canvas.drawBitmap(imgSrc, <span class="number">0</span>, <span class="number">0</span>, paint);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>点击事件（触摸反馈）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onTouchEvent</span><span class="params">(MotionEvent event)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">switch</span> (event.getAction())&#123;</span><br><span class="line">           <span class="keyword">case</span> MotionEvent.ACTION_DOWN:</span><br><span class="line">               <span class="comment">//记录当前位置</span></span><br><span class="line">               switchState = <span class="keyword">true</span>;</span><br><span class="line">               currentX = event.getX();</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">case</span> MotionEvent.ACTION_MOVE:</span><br><span class="line">               currentX = event.getX();</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">case</span> MotionEvent.ACTION_UP:</span><br><span class="line">               switchState = <span class="keyword">false</span>;</span><br><span class="line">               currentX = event.getX();</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">default</span>:</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//重新绘制界面</span></span><br><span class="line">       invalidate();</span><br><span class="line">       <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>这里我们使用currentX 记录当前位置，并且给了一个boolean值记录了状态，然后在onDraw中重新写一下逻辑</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (switchState)&#123;</span><br><span class="line">           canvas.drawBitmap(imgSrc, currentX, <span class="number">0</span>, paint);</span><br><span class="line">       &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">           <span class="keyword">if</span> (isOpen) &#123;</span><br><span class="line">               <span class="keyword">int</span> left = imgBg.getWidth() - imgSrc.getWidth();</span><br><span class="line">               canvas.drawBitmap(imgSrc, left, <span class="number">0</span>, paint);</span><br><span class="line">           &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">               canvas.drawBitmap(imgSrc, <span class="number">0</span>, <span class="number">0</span>, paint);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+<p>这时我们就可以滑动了，这时我们发现滑块可以一直往左边滑动一直往右边滑动，这时我们则需要控制滑块位置避免滑出背景，上述代码第二行上加入：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 根据当前用户触摸到的位置画滑块</span></span><br><span class="line"><span class="comment">// 让滑块向左移动自身一半大小的位置</span></span><br><span class="line"><span class="keyword">float</span> newLeft = currentX - slideButtonBitmap.getWidth() / <span class="number">2.0f</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> maxLeft = switchBackgroupBitmap.getWidth() - slideButtonBitmap.getWidth();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 限定滑块范围</span></span><br><span class="line"><span class="keyword">if</span>(newLeft &lt; <span class="number">0</span>)&#123;</span><br><span class="line">	newLeft = <span class="number">0</span>; <span class="comment">// 左边范围</span></span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span> (newLeft &gt; maxLeft) &#123;</span><br><span class="line">	newLeft = maxLeft; <span class="comment">// 右边范围</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">canvas.drawBitmap(slideButtonBitmap, newLeft, <span class="number">0</span>, paint);</span><br></pre></td></tr></table></figure>
+<p>控制滑块滑动结束后的位置：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> center = switchBackgroupBitmap.getWidth() / <span class="number">2.0f</span>;</span><br><span class="line"><span class="comment">// 根据当前按下的位置, 和控件中心的位置进行比较. </span></span><br><span class="line"><span class="keyword">boolean</span> state = currentX &gt; center;</span><br><span class="line"><span class="comment">// 如果开关状态变化了, 通知界面. 里边开关状态更新了.</span></span><br><span class="line"><span class="keyword">if</span>(state != mSwitchState &amp;&amp; onSwitchStateUpdateListener != <span class="keyword">null</span>)&#123;</span><br><span class="line">	<span class="comment">// 把最新的boolean, 状态传出去了</span></span><br><span class="line">	onSwitchStateUpdateListener.onStateUpdate(state);</span><br><span class="line">	&#125;</span><br><span class="line">mSwitchState = state;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自定义监听</p>
+<ul>
+<li><p>声明接口对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">OnSwitchUpdateListener</span></span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">onSwitchUpdateListener</span><span class="params">(<span class="keyword">boolean</span> state)</span></span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加设置接口对象方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> OnSwitchUpdateListener onSwitchUpdateListener = <span class="keyword">null</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setOnSwitchUpdateListener</span><span class="params">(OnSwitchUpdateListener onSwitchUpdateListener)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.onSwitchUpdateListener = onSwitchUpdateListener;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在适合的位置执行接口方法（这里因为是自己自定义View我们在触摸方法总执行）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> MotionEvent.ACTION_UP:</span><br><span class="line">     switchState = <span class="keyword">false</span>;</span><br><span class="line">     currentX = event.getX();</span><br><span class="line">     <span class="keyword">float</span> center = imgBg.getWidth() / <span class="number">2.0f</span>;</span><br><span class="line">     <span class="comment">//记录变化</span></span><br><span class="line">     <span class="keyword">boolean</span> state = currentX &gt; center;</span><br><span class="line">     <span class="comment">//设置监听</span></span><br><span class="line">     <span class="keyword">if</span> (isOpen != state &amp;&amp; onSwitchUpdateListener !=<span class="keyword">null</span>) &#123;</span><br><span class="line">     	 onSwitchUpdateListener.onSwitchUpdateListener(state);</span><br><span class="line">         &#125;</span><br><span class="line">      isOpen = state;</span><br><span class="line">	       <span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>界面收到事件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">switchView.setOnSwitchUpdateListener(<span class="keyword">new</span> SwitchView.OnSwitchUpdateListener() &#123;</span><br><span class="line">           <span class="meta">@Override</span></span><br><span class="line">           <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onSwitchUpdateListener</span><span class="params">(<span class="keyword">boolean</span> state)</span> </span>&#123;</span><br><span class="line">               Log.e(TAG,state+<span class="string">"----&gt;"</span>);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>自定义属性（通过这个设置我们就可以直接在布局文件中直接赋值了）</p>
+<ul>
+<li><p>创建attrs并在attrs.xml声明节点declare-styleable（参照系统View的attrs）</p>
+<p>属性解释</p>
+<p>|  名称  | 说明 |            例            |<br>| :—-: | :–: | :———————-: |<br>|  name  | 名称 | name=”switch_background” |<br>| format | 类型 |    format=”reference”    |</p>
+<p>format属性说明</p>
+<p>|   名称    |           说明           |<br>| :——-: | :———————-: |<br>| reference | 表示引用，参考某一资源ID |<br>|  string   |          字符串          |<br>|   color   |          颜色值          |<br>| dimension |           尺寸           |<br>|  boolean  |           布尔           |<br>|  integer  |           整型           |<br>|   float   |          浮点数          |<br>| fraction  |          百分数          |<br>|   enum    |           枚举           |<br>|   flag    |        表示位运算        |</p>
+<p>例：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">declare-styleable</span> <span class="attr">name</span>=<span class="string">"SwitchView"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">"switch_background"</span> <span class="attr">format</span>=<span class="string">"reference"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">"switch_src"</span> <span class="attr">format</span>=<span class="string">"reference"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">"switch_state"</span> <span class="attr">format</span>=<span class="string">"boolean"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">declare-styleable</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在xml配置声明的属性，添加命名空间</p>
+<p>命名空间声明：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns:android="http://schemas.android.com/apk/res/android"</span><br></pre></td></tr></table></figure>
+<p>参照系统格式我总结出格式：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns:自己随意写="http://schemas.android.com/apk/res/项目包名"</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在构造函数中获取并使用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">SwitchView</span><span class="params">(Context context, @Nullable AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>(context, attrs);</span><br><span class="line">       <span class="comment">//声明命名空间</span></span><br><span class="line">	String name = <span class="string">"http://schemas.android.com/apk/res/com.example.administrator.customview"</span>;</span><br><span class="line">       isOpen = attrs.getAttributeBooleanValue(name,<span class="string">"switch_state"</span>,<span class="keyword">false</span>);</span><br><span class="line">       setSwitchOpen(isOpen);</span><br><span class="line">       <span class="keyword">int</span> background = attrs.getAttributeResourceValue(name,<span class="string">"switch_background"</span>,-<span class="number">1</span>);</span><br><span class="line">       setSwitchBackground(background);</span><br><span class="line">       <span class="keyword">int</span> src = attrs.getAttributeResourceValue(name,<span class="string">"switch_src"</span>,-<span class="number">1</span>);</span><br><span class="line">       setSwitchSrc(src);</span><br><span class="line"></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这样我们的开关就大功告成啦</p>
+<h5 id="项目地址：-https-github-com-HOUJINZHI-customview-git"><a href="#项目地址：-https-github-com-HOUJINZHI-customview-git" class="headerlink" title="项目地址：    https://github.com/HOUJINZHI/customview.git"></a>项目地址：    <a href="https://github.com/HOUJINZHI/customview.git" target="_blank" rel="noopener">https://github.com/HOUJINZHI/customview.git</a></h5><p>总结：<br>  从上边我们写的看起来也不是很复杂哈，自定义View其实就三个重点测量、绘制和触摸反馈，我的讲解就结束啦，希望通过这篇文章能给你带来帮助。</p>
+</li>
+</ol>
+<blockquote>
+<h4 id="最后献上几篇比较好的自定义View教程"><a href="#最后献上几篇比较好的自定义View教程" class="headerlink" title="最后献上几篇比较好的自定义View教程"></a>最后献上几篇比较好的自定义View教程</h4></blockquote>
+<ul>
+<li><a href="http://www.gcssloop.com/customview/CustomViewIndex" target="_blank" rel="noopener">http://www.gcssloop.com/customview/CustomViewIndex</a></li>
+<li><a href="https://blog.csdn.net/harvic880925/article/details/50995268" target="_blank" rel="noopener">https://blog.csdn.net/harvic880925/article/details/50995268</a> </li>
+<li><a href="http://hencoder.com" target="_blank" rel="noopener">http://hencoder.com</a></li>
+</ul>
+
+          
+        
+      
     </div>
-    <footer class="post-footer clearfix">
-        <div class="pull-left tag-list">
-            <div class="post-meta">
     
     
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/View">
-            View
-        </a>
-    </span>
     
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            <a href="/tags/自定义View">
-               自定义View
-            </a>
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018/04/09</span>
-    </span>
-</div>
 
-        </div>
+    
 
-        <div class="post-permalink"> 
-            <a href="/2018/04/09/自定义View/自定义开关/" class="btn btn-default">阅读全文</a>
-        </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-</article>
+  </div>
+  
+  
+  
+  </article>
 
 
-<article class="post">
     
-        <div class="post-media">
-            <a href="/2018/04/08/Git/程序员Git必备操作-使用Git上传文件到码云/">
-                <img class="img-ajax" src="/img/loading.gif"  data-src="http://p6urtncv1.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20180409162453.png"   alt="程序员Git必备操作-使用Git上传文件到码云"> 
-            </a>
-        </div>
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.xiaohoutongxue.cn/2018/04/08/Git/程序员Git必备操作-使用Git上传文件到码云/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xiaoHou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XiaoHou blog">
+    </span>
+
     
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2018/04/08/Git/程序员Git必备操作-使用Git上传文件到码云/">程序员Git必备操作-使用Git上传文件到码云</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2018年04月08日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
                 
-作为一个程序员，你要学会代码的管理，这是一个最基本的修养，就像是一个剑客的剑谱，代码管理，目前流行的是svn和git，但是很不好的是git如果没有插件的话，很多人都不会用git bash 来实现自己的代码管理，自己不断尝试，今天终于...
+                <a class="post-title-link" href="/2018/04/08/Git/程序员Git必备操作-使用Git上传文件到码云/" itemprop="url">程序员Git必备操作-使用Git上传文件到码云</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-        </p> 
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-08T14:19:31+08:00">
+                2018-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>作为一个程序员，你要学会代码的管理，这是一个最基本的修养，就像是一个剑客的剑谱，代码管理，目前流行的是svn和git，但是很不好的是git如果没有插件的话，很多人都不会用git bash 来实现自己的代码管理，自己不断尝试，今天终于总结出一个很好的方法，供各位剑客参考一下，望尔等使用后，脱离天天来回背电脑的苦逼命运。</p>
+</blockquote>
+<h2 id="一、码云配置"><a href="#一、码云配置" class="headerlink" title="一、码云配置"></a>一、码云配置</h2><h5 id="1-使用自己已有的账号创建一个新项目"><a href="#1-使用自己已有的账号创建一个新项目" class="headerlink" title="1.使用自己已有的账号创建一个新项目"></a>1.使用自己已有的账号创建一个新项目</h5><h5 id="2-创建项目"><a href="#2-创建项目" class="headerlink" title="2.创建项目"></a>2.创建项目</h5><h2 id="二、Git操作"><a href="#二、Git操作" class="headerlink" title="二、Git操作"></a>二、Git操作</h2><h5 id="1-下载git"><a href="#1-下载git" class="headerlink" title="1.下载git"></a>1.下载git</h5><p>​    网址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a> 选择操作系统对应的版本下载即可</p>
+<h5 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h5><p>​    选择自己要安装的的目录安装即可</p>
+<h5 id="3-配置用户名邮箱"><a href="#3-配置用户名邮箱" class="headerlink" title="3.配置用户名邮箱"></a>3.配置用户名邮箱</h5><p>​    git config –global user.name “用户名”</p>
+<p>​        git config –global user.email “邮箱地址”</p>
+<p>​<br>    <img src="https://i.imgur.com/ge7MgHF.png" alt=""></p>
+<h5 id="4-创建本地厂库"><a href="#4-创建本地厂库" class="headerlink" title="4.创建本地厂库"></a>4.创建本地厂库</h5><p>​    git init 初始化git仓库</p>
+<p><img src="https://i.imgur.com/cH1v9t1.png" alt=""></p>
+<h5 id="5-链接远程仓库"><a href="#5-链接远程仓库" class="headerlink" title="5.链接远程仓库"></a>5.链接远程仓库</h5><p>​     git remote add orgin “你的远程仓库地址”（复制链接后记得加 .git）</p>
+<p><img src="https://i.imgur.com/EzkdDSN.png" alt=""></p>
+<h5 id="6-上传代码到码云"><a href="#6-上传代码到码云" class="headerlink" title="6.上传代码到码云"></a>6.上传代码到码云</h5><p>​          git add .</p>
+<p><img src="https://i.imgur.com/nro8UdD.png" alt=""></p>
+<h5 id="7-添加文件注释"><a href="#7-添加文件注释" class="headerlink" title="7.添加文件注释"></a>7.添加文件注释</h5><p>​      git commit -m ‘第一次添加’</p>
+<p><img src="https://i.imgur.com/Wcwl5sS.png" alt=""></p>
+<h5 id="8-上传代码"><a href="#8-上传代码" class="headerlink" title="8.上传代码"></a>8.上传代码</h5><p>​           git push -u origin master 如果上传失败 则使用 git push -u origin master -f  （强制上传文件）</p>
+
+          
+        
+      
     </div>
-    <footer class="post-footer clearfix">
-        <div class="pull-left tag-list">
-            <div class="post-meta">
     
     
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/Git">
-            Git
-        </a>
-    </span>
     
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            <a href="/tags/Git">
-               Git
-            </a>
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018/04/08</span>
-    </span>
-</div>
 
-        </div>
+    
 
-        <div class="post-permalink"> 
-            <a href="/2018/04/08/Git/程序员Git必备操作-使用Git上传文件到码云/" class="btn btn-default">阅读全文</a>
-        </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-</article>
+  </div>
+  
+  
+  
+  </article>
 
 
-<article class="post">
     
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2018/03/29/hello-world/">Hello</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2018年03月29日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.xiaohoutongxue.cn/2018/03/29/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xiaoHou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XiaoHou blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/29/hello-world/" itemprop="url">Hello</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-                欢迎各位大虾来到我的新博客，博客正在开发中请见谅~
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-29T15:00:51+08:00">
+                2018-03-29
+              </time>
+            
 
             
-        </p> 
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hello/" itemprop="url" rel="index">
+                    <span itemprop="name">hello</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>欢迎各位大虾来到我的新博客，博客正在开发中请见谅~</p>
+
+          
+        
+      
     </div>
-    <footer class="post-footer clearfix">
-        <div class="pull-left tag-list">
-            <div class="post-meta">
     
     
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/hello">
-            hello
-        </a>
-    </span>
     
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            <a href="/tags/Hello">
-               Hello
-            </a>
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018/03/29</span>
-    </span>
-</div>
 
-        </div>
+    
 
-        <div class="post-permalink"> 
-            <a href="/2018/03/29/hello-world/" class="btn btn-default">阅读全文</a>
-        </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
-</article>
+  </div>
+  
+  
+  
+  </article>
 
 
+    
+  </section>
+
+  
 
 
+          </div>
+          
 
 
-                </main>
-                
-    <aside class="col-md-4 sidebar">
-        
-        
-    <div class="widget">    
-        <h3 class="title">搜索</h3>
-        <div id="search-form">
-            <div id="result-mask" class="hide"></div>
-            <div class="search-area">
-                
-                
-                    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜点什么呢？"><button type="submit" class="search-form-submit">Google</button><input type="hidden" name="sitesearch" value="http://www.xiaohoutongxue.cn"></form>
-                
-            </div>
-            <div id="result-wrap" class="hide">
-                <div id="search-result"></div>
-            </div>
-            <div class="hide">
-                <template id="search-tpl">
-                    <div class="item">
-                        <a href="/{path}" title="{title}">
-                            <div class="title">{title}</div>
-                            <div class="content">{content}</div>
-                        </a>
-                    </div>
-                </template>
-            </div>
+          
+
         </div>
-    </div>
-
         
-        
-        
-        
-    <div class="widget">
-        <h3 class="title">分类</h3>
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/Git/"><i class="fa" aria-hidden="true">Git</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/View/"><i class="fa" aria-hidden="true">View</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hello/"><i class="fa" aria-hidden="true">hello</i></a><span class="category-list-count">1</span></li></ul>
-    </div>
-
-
-        
-        
-    <div class="widget">
-      <h3 class="title">归档</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/"><i class="fa" aria-hidden="true">April 2018</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/"><i class="fa" aria-hidden="true">March 2018</i></a><span class="archive-list-count">1</span></li></ul>
-    </div>
-
-
-        
-        
-  <div class="widget">
-    <h3 class="title">标签</h3>
-    <div class="content tag-cloud">
-        <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/自定义View/" style="font-size: 10px;">自定义View</a>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
 
-        
-        
-    <div class="widget">
-        <h3 class="title">友情链接</h3>
-        <div class="content friends-link">
-        
-            <a href="http://www.luohaoyun.cn" class="fa" target="_blank">Foldcc</a>
-        
-            <a href="http://xiaweizi.cn" class="fa" target="_blank">下位子</a>
-        
-        </div>
-    </div>
+      
 
-        
-        
-    <div class="widget">
-      <h3 class="title">社交链接</h3> 
-        <div class="content social">
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-	            <a href="https://github.com/HOUJINZHI" rel="external nofollow" title="Github" target="_blank">
-			    	<i class="github fa fa-github"></i>
-			    </a>
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="xiaoHou" />
             
+              <p class="site-author-name" itemprop="name">xiaoHou</p>
+              <p class="site-description motion-element" itemprop="description">Android攻城狮</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/HOUJINZHI" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://gitee.com/shuaichuxinggaodu" target="_blank" title="码云">
+                      
+                        <i class="fa fa-fw fa-cloud"></i>码云</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/58d60c86a22b9d00645d1601" target="_blank" title="掘金">
+                      
+                        <i class="fa fa-fw fa-shield"></i>掘金</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:houjinzhi0222@gmail.com" target="_blank" title="E-MAIL">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-MAIL</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.luohaoyun.cn" title="Foldcc" target="_blank">Foldcc</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://xiaweizi.cn" title="下位子" target="_blank">下位子</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
         </div>
+      </section>
+
+      
+
+      
+
     </div>
+  </aside>
 
 
         
-    </aside>
+      </div>
+    </main>
 
-            </div>
-        </div>
-    </section>
-    <footer class="main-footer">
-    <div class="container">
-        <div class="row">
-        </div>
-    </div>
-</footer>
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xiaoHou</span>
 
-<a id="back-to-top" class="hide">
-	<i class="fa fa-chevron-up"></i>
-</a>
-
-
-
-
-    <div class="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12"> 
-                <span>Copyright &copy; 2018
-                </span> | 
-                <span>
-                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
-                </span> | 
-                <span>
-                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
-                </span>
-            </div>
-        </div>
-    </div>
+  
 </div>
 
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
-<script src="/js/app.js?rev=@@hash"></script>
 
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
